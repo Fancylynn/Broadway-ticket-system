@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Broadway Musical</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1 id ="test">BROADWAY MUSICAL</h1>
+    <a href="Introduction.html" id="introduction">Amazing Shows&nbsp;</a>
+    <a href="dbweb.html" id="order">&nbsp;Ticket Order</a>
+    <a href="dataretrieve.py">&nbsp;Order History</a>
+    <hr>
+    <br>
+    <form method="GET" action="datasent.py">
+    <fieldset>
+        <h3>Contact Information</h3>
+        <hr>
+        <b>Name</b>
+        <input type="text" name="name" size="30" required>
+        <br>
+        <br>
+        
+        <b>Phone Number</b>
+        <input type="tel" name="phone" required>
+        <br>
+        <br>
+        
+        <b>Email Address</b>
+        <input type="email" name="email"required>
+        <br>
+        <br>
+        
+        <b>Home Address</b>
+        <textarea name="address" cols="50" rows="3" placeholder="Please specify your apt or room number" required></textarea>
+        <br>
+        
+        <h3>Ticket Information</h3>
+        <hr>
+        <b>Available Shows</b>
+        <select name="drama" size="1">
+            <option value="phantom">Phantom of the Opera</option>
+            <option value="wicked">Wicked</option>
+            <option value="lion_king">The Lion King</option>
+            <option value="book_of_mormon">The Book of Mormon</option>
+            <option value="aladdin">Aladdin </option>
+        </select>
+        <br>
+        <br>
+        
+        <b>Available Time</b>
+        <select name="time" size="1">
+            <option value="Friday">Friday - 12/30/16 - 7:00 pm</option>
+            <option value="Saturday">Saturday - 12/31/16 - 7:00 pm</option>
+            <option value="Sunday">Sunday - 1/1/17 - 7:00 pm</option>
+        </select>
+        <br>
+        <br>
+        
+        <b>Ticket Quantity</b>
+        <select name="quantity" size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br>
+        <br>
+        
+        <b>Delivery Mode</b>
+        <input type="radio" name="delivery_mode" value="in_store"><b>In Store Pickup</b>
+        <input type="radio" name="delivery_mode" value="home"><b>Mail to Home Address</b>
+        <input type="radio" name="delivery_mode" value="email"><b>Email</b>
+        <br>
+        <br>
+        
+        <b>Payment Method</b>
+        <input type="radio" name="payment" value="debit"><b>Debit Card</b>
+        <input type="radio" name="payment" value="credit"><b>Credit Card</b>
+        <input type="radio" name="payment" value="cash"><b>Cash</b>
+        <br>
+        <br>
+        
+        <div id="order">
+            <input class="button" id="submit" type="submit" value="Order">
+            <input class="button" id="cancel" type="reset"  value="Cancel">
+        </div> 
+    </fieldset>
+    </form>
+</body>
+</html>

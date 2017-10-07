@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    font-family: Arial;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:aliceblue;
+}
+
+#vis {
+    width: 1500;
+    height: 400;
+    padding: 40px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#vis1 {
+    width:2000px;
+}
+
+footer {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#chart1 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#chart2 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#chart3 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#chart4 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#chart5 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#chart6 {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+#intro {
+    position:absolute;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    background-color: darksalmon;
+    border: solid 2px white;
+    left: 35%;
+    top: 10%;
+    z-index: 9999;
+    visibility: hidden;
+}

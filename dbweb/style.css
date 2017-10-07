@@ -1,0 +1,58 @@
+body {
+    background-image: url(picture/background1.jpg);
+    margin-top: -46px;
+}
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    font-family: Arial;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:aliceblue;
+}
+
+fieldset {
+    height = 300;
+    width = 500;
+    border-width: 3px;
+    border-color: white;
+    
+}
+
+h3 {
+    font-family: Arial;
+    color: chocolate;
+    font-size: 30px;
+}
+
+#order {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+b {
+    color:white;
+    font-size:20px;
+}

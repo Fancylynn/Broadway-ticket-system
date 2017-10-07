@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Broadway Musical</title>
+    <link href="style1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1 id ="test">BROADWAY MUSICAL</h1>
+    <a href="Introduction.html" id="introduction"><b>Amazing Shows</b>&nbsp;</a>
+    <a href="dbweb.html" id="order">&nbsp;Ticket Order</a>
+    <a href="dataretrieve.py">&nbsp;Order History</a>
+    <hr>
+    <div id="vis">
+        <div id="vis1">
+            <img src="picture/Lion_king.jpg" alt="The Lion King" height="390"  width="300" id="chart1"/>
+            <img src="picture/wicked.jpg" alt="Wicked" height="390" width="300" id="chart2"/>
+            <img src="picture/The_Phantom_of_the_opera.jpg" alt="The Phantom of the Opera" height="390" width="300" id="chart3"/>
+            <img src="picture/The-Book-of-Morman.jpg" alt="The Book of Morman" height="390" width="300" id="chart4"/>
+            <img src="picture/Aladdin.jpg" alt="Aladdin" height="390" width="300" id="chart5"/>
+            <img src="picture/cats.jpg" alt="Cats" height="390" width="300" id="chart6"/>
+        </div>
+    </div>
+    <div id="intro">
+        <p>This is a test</p>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <b>Produced by Lynn</b>
+    </footer>
+    <br>
+</body> 
+<script>
+    for (let i = 1; i < 7; i++) {
+        var idname = "chart" + i;
+        let getElement = document.getElementById(idname);
+        var introduction = document.getElementById("intro");
+        var hide = true;
+        getElement.addEventListener("click", function() {
+            introduction.innerHTML = "<h2 style='font-family: Arial; color: darkblue'>Introduction to Lion King</h2>";
+            introduction.innerHTML += "<p style='font-family: Cursive'>Lion King is a very popular broadway show! Enjoy it!</p>"
+            if (hide) {
+                introduction.style.visibility = "visible";
+                hide = false;
+            }
+            else {
+                introduction.style.visibility = "hidden";
+                hide = true;
+            }   
+        })
+        getElement.addEventListener("mouseover", function() {
+            getElement.style.filter = "brightness(100%)";
+            console.log(getElement);
+        })
+        getElement.addEventListener("mouseout", function() {
+            getElement.style.filter = "brightness(50%)";
+            introduction.style.visibility = "hidden";
+            console.log(getElement);
+            hide =true;
+        })
+    
+    }
+</script>
+</html>
